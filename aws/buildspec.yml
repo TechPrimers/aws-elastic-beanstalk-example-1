@@ -20,3 +20,4 @@ phases:
 artifacts:
   files:
   - target/aws-beanstalk-example-1-0.0.1-SNAPSHOT.war
+  discard-paths: yes
