@@ -20,4 +20,5 @@ phases:
 artifacts:
   files:
   - target/aws-beanstalk-example-1-0.0.1-SNAPSHOT.war
+  - aws/appspec.yml
   discard-paths: yes
