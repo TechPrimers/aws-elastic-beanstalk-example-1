@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Present inside restart.sh"
 ls -lrt /var/lib/tomcat8/webapps
 ls -lrt /usr/share/tomcat8/webapps/
 
-service tomcat7 stop
-service tomcat7 start
+service tomcat8 stop
+service tomcat8 start
 
