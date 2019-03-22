@@ -18,7 +18,8 @@ phases:
     - ls -lrt
     - ls -lrt target/
 artifacts:
+  type: zip
   files:
-  - target/aws-beanstalk-example-1-0.0.1-SNAPSHOT.war
+  - target/*.war
   - aws/appspec.yml
   discard-paths: yes
