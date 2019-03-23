@@ -15,10 +15,11 @@ phases:
     commands:
     - echo Entering post_build phase...
     - echo Build completed on `date`i
-    - mv target/aws-beanstalk-example-1-0.0.1-SNAPSHOT.war target/ROOT.war
     - ls -lrt
     - ls -lrt target/
 artifacts:
+  type: zip
   files:
-  - target/ROOT.war
+  - target/aws-beanstalk-example-1-0.0.1-SNAPSHOT.war
+  - appspec.yml
   discard-paths: yes
