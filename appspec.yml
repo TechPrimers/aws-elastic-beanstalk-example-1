@@ -4,7 +4,7 @@ version: 0.0
 os: linux
 files:
   - source: source
-    destination: /var/lib/tomcat8/webapps/
+    destination: /var/lib/tomcat8/webapps/ROOT
 hooks:
   BeforeInstall:
     - location: aws/check.sh
