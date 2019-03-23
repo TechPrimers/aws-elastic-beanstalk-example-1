@@ -8,7 +8,7 @@ phases:
     commands:
     - echo Entering build phase...
     - echo Build started on `date`
-    - mvn clean prepare-package
+    - mvn clean prepare-package war:exploded
     - ls -lrt
     - ls -lrt target/
   post_build:
@@ -16,7 +16,7 @@ phases:
     - echo Entering post_build phase...
     - echo Build completed on `date`i
     - ls -lrt
-    - ls -lrt target/deploy
+    - mv target/deploy ./
 artifacts:
   files:
-  - target/deploy/**/*
+  - deploy/**/*
